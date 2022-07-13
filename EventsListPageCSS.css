@@ -1,8 +1,8 @@
 body {
-    height: auto;
     margin: 0;
-    overflow: hidden;
     background-color: rgb(248, 213, 168);
+    height: 100vh;
+    overflow: hidden;
 }
 
 .header {
@@ -18,7 +18,7 @@ body {
 }
 
 .menu {
-    height: fit-content;
+    height: min-content;
     margin: 0;
     border-right: 1px black solid;
     border-bottom: 1px black solid;
@@ -32,6 +32,7 @@ body {
     width: 100%;
     margin: 0;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .list {
@@ -47,6 +48,7 @@ body {
     margin: 0;
     padding: 50% 0 50% 0;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .form {
@@ -57,13 +59,13 @@ body {
 
 .bodyScreen {
     display: flex;
-    height: fit-content;
+    height: calc(100% - 65px);
 }
 
 .eventList {
     width: 92%;
-    height: auto;
-    display: inline-flex;
+    height: 100%;
+    display: flex;
     flex-wrap: wrap;
     overflow: auto;
 }
@@ -74,6 +76,7 @@ body {
     margin: 10px;
     text-align: center;
     border: 1px black solid;
+    cursor: pointer;
 }
 
 .eventTitle {
@@ -84,13 +87,14 @@ body {
     margin: 10px;
 }
 
-hr{
+hr {
     margin: 0;
 }
 
-.newButton{
+.newButton {
     background-color: #ffc16f;
     border: 1px black solid;
     border-radius: 2px;
     margin-top: 15%;
+    cursor: poiter;
 }

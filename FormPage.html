@@ -24,6 +24,7 @@
             </a>
         </div>
         <form id="informationEvent" class="informationEvent">
+
             <div class="inputField">
                 <span>Name: <input id="eventName" type="text" required></span>
             </div>
@@ -61,7 +62,8 @@
     authDomain: "eventtask-cba2a.firebaseapp.com", projectId: "eventtask-cba2a",
 	storageBucket: "eventtask-cba2a.appspot.com", messagingSenderId: "1066633327496",
 	appId: "1:1066633327496:web:4e73216fff5265427ec03d", measurementId: "G-6CTMG79L0Y" }; //
-    Initialize Firebase const app = initializeApp(firebaseConfig);
+    //Initialize Firebase
+    const app = initializeApp(firebaseConfig);
 	const analytics = getAnalytics(app);
 	document.getElementById('title').innerHTML = ((localStorage.getItem("edit") == 0 || localStorage.getItem("edit") == null) ? "Create Event" : "Edit Event");
 	document.getElementById("listLink").onclick = clear();
